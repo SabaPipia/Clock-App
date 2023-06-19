@@ -1,0 +1,16 @@
+.header {
+  color: #fff;
+  width: 100%;
+  transition: all 5s;
+
+  &.expanded {
+    display: none;
+  }
+  .quote {
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 10px;
+  }
+}

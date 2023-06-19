@@ -1,0 +1,22 @@
+.details {
+  overflow: hidden;
+  height: 50vh;
+  background: linear-gradient(0.25turn, #ffffffcc, #ffffffcc, #ffffffcc);
+  padding: 50px 120px 0px 120px;
+  .line {
+    width: 2px;
+    height: 70%;
+    background-color: red;
+  }
+  &.expanded {
+    background: linear-gradient(0.25turn, #ffffffcc, #ffffffcc, #ffffffcc);
+    display: grid;
+    grid-template-columns: 40fr 10fr 40fr;
+    .detailsRight,
+    .detailsLeft {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import "../../sassVariables/variables.scss";
+
+.mainWrapper {
+  height: 100vh;
+  justify-content: space-between;
+  transition: all 1s;
+  &.expanded {
+    height: 50vh;
+  }
+  .detailsWrapper {
+    transition: all 1s;
+    height: 0;
+    overflow: hidden;
+    &.expanded {
+      height: 50vh;
+    }
+  }
+  .color {
+    height: 100vh;
+    background-color: rgba(9, 1, 14, 0.301);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 1s;
+    &.expanded {
+      height: 50vh;
+    }
+    .wrapperHeader {
+      transition: all 1.5s;
+      padding: 50px 120px 0px 120px;
+      &.expanded {
+        padding: 0;
+      }
+    }
+    .wrapperClock {
+      padding: 20px 120px 30px 120px;
+    }
+  }
+}
