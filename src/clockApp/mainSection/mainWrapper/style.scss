@@ -26,7 +26,7 @@
       height: 50vh;
     }
     .wrapperHeader {
-      transition: all 1.5s;
+      transition: ease-out 1.5s;
       padding: 50px 120px 0px 120px;
       &.expanded {
         padding: 0;

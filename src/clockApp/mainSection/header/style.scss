@@ -1,7 +1,6 @@
 .header {
   color: #fff;
   width: 100%;
-  transition: all 5s;
 
   &.expanded {
     display: none;
@@ -9,8 +8,31 @@
   .quote {
     max-width: 600px;
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     align-items: start;
     margin-bottom: 10px;
+    .refresh {
+      cursor: pointer;
+      margin-left: 20px;
+      background: none;
+      border: none;
+      width: 23px;
+      height: 25px;
+      // padding: 10px;
+      .loading {
+        padding: 10px;
+        transition: transform 0.3s;
+        transform-origin: center;
+        transform: rotate(360deg);
+        transition: all 1s;
+      }
+      // &.loading:hover {
+      //   // padding: 10px;
+      //   transition: transform 0.3s;
+      //   transform-origin: 22px;
+      //   transform: rotate(360deg);
+      //   transition: all 1s;
+      // }
+    }
   }
 }
