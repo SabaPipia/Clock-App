@@ -1,10 +1,15 @@
 import React from "react";
 
+interface Ref {
+  onClick: () => void;
+  className: string;
+}
+
 export function ArrowDown() {
   return (
-    <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg">
+    <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
       <circle fill="#303030" cx="20" cy="20" r="20" />
-      <path stroke="#FFF" stroke-width="2" fill="none" d="m1 1 6 6 6-6" />
+      <path stroke="#FFF" stroke-width="2" fill="none" d="M14 18l6 6 6-6" />
     </svg>
   );
 }
@@ -40,14 +45,16 @@ export function Sun() {
     </svg>
   );
 }
-export function Refresh() {
+export const Refresh: React.FC<Ref> = ({ onClick, className }) => {
   return (
-    <svg width="70" height="40" xmlns="http://www.w3.org/2000/svg">
+    <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M7.188 10.667a.208.208 0 01.147.355l-2.344 2.206a5.826 5.826 0 009.578-2.488l2.387.746A8.322 8.322 0 013.17 14.94l-2.149 2.022a.208.208 0 01-.355-.148v-6.148h6.52zm7.617-7.63L16.978.958a.208.208 0 01.355.146v6.23h-6.498a.208.208 0 01-.147-.356L13 4.765A5.825 5.825 0 003.43 7.26l-2.386-.746a8.32 8.32 0 0113.76-3.477z"
         fill="#fff"
         fillRule="nonzero"
+        onClick={onClick}
+        className={className}
       />
     </svg>
   );
-}
+};

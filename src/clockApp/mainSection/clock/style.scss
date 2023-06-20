@@ -46,6 +46,10 @@
       svg {
         display: block;
       }
+      .expanded svg {
+        transition: all 1s;
+        transform: rotate(180deg);
+      }
     }
   }
 }
