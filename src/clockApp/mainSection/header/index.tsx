@@ -17,8 +17,7 @@ const Header: React.FC<HeaderProps> = (props) => {
         "https://joe-rogan-quote-generator.p.rapidapi.com/generate_rogan",
         {
           headers: {
-            "X-RapidAPI-Key":
-              "4b3cc38ef9msh5b1b9b6097d88c7p1b4880jsna6fdd16393e9",
+            "X-RapidAPI-Key": "Your APIKEY",
             "X-RapidAPI-Host": "joe-rogan-quote-generator.p.rapidapi.com",
           },
         }
