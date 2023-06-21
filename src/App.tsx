@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import MainWrapper from "./clockApp/mainSection/mainWrapper/";
-// import DetailsWrapper from "./clockApp/mainSection/mainWrapper";
 import "./App.scss";
-
+// #TODO Change the background according to the clock
 function App() {
   return (
     <div className="app">

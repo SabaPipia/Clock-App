@@ -5,9 +5,59 @@
     font-size: 35px;
     font-weight: 200;
     color: #6d6d6d;
+    text-transform: uppercase;
   }
   h1 {
+    text-transform: capitalize;
     font-size: 60px;
     color: #141414;
+  }
+}
+
+@media (max-width: 1200px) {
+  .card {
+    h4 {
+      font-size: 25px;
+    }
+    h1 {
+      font-size: 40px;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .card {
+    h4 {
+      font-size: 22px;
+    }
+    h1 {
+      font-size: 35px;
+    }
+  }
+}
+@media (max-width: 587px) {
+  .card {
+    h4 {
+      font-size: 20px;
+    }
+    h1 {
+      font-size: 32px;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .card {
+    display: grid;
+    // gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    h4 {
+      align-self: center;
+      font-size: 15px;
+    }
+    h1 {
+      text-align: end;
+      font-size: 32px;
+    }
   }
 }
