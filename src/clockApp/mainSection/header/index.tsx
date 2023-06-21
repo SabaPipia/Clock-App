@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import "./style.scss";
 import { Refresh } from "../../../images/icons/";
@@ -17,8 +17,7 @@ const Header: React.FC<HeaderProps> = (props) => {
         "https://joe-rogan-quote-generator.p.rapidapi.com/generate_rogan",
         {
           headers: {
-            "X-RapidAPI-Key":
-              "4b3cc38ef9msh5b1b9b6097d88c7p1b4880jsna6fdd16393e9",
+            "X-RapidAPI-Key": "Your-APIKEY",
             "X-RapidAPI-Host": "joe-rogan-quote-generator.p.rapidapi.com",
           },
         }
@@ -29,10 +28,9 @@ const Header: React.FC<HeaderProps> = (props) => {
         const respDataSplit = respData.split("-");
         setQuote(respDataSplit[0]);
         setAuthor(respDataSplit[1]);
-        // console.log(quote);
       }
     } catch (error) {
-      // #Todo show error message
+      return "something went Wrong";
     }
   };
   const handleClick = () => {
@@ -42,7 +40,6 @@ const Header: React.FC<HeaderProps> = (props) => {
       setIsLoading("");
     }, 2000);
   };
-  // fetchData();
   return (
     <div className={`header ${props.expanded}`}>
       <div className="quote">

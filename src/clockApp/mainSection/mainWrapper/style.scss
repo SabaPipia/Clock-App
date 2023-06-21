@@ -1,5 +1,3 @@
-@import "../../sassVariables/variables.scss";
-
 .mainWrapper {
   height: 100vh;
   justify-content: space-between;
@@ -34,6 +32,30 @@
     }
     .wrapperClock {
       padding: 20px 120px 30px 120px;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .mainWrapper {
+    .color {
+      .wrapperHeader {
+        padding: 20px 60px 20px 60px;
+      }
+      .wrapperClock {
+        padding: 20px 60px 20px 60px;
+      }
+    }
+  }
+}
+@media (max-width: 550px) {
+  .mainWrapper {
+    .color {
+      .wrapperHeader {
+        padding: 20px 30px 20px 30px;
+      }
+      .wrapperClock {
+        padding: 20px 30px 20px 30px;
+      }
     }
   }
 }

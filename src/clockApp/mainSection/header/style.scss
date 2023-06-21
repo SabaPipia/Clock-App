@@ -26,13 +26,20 @@
         transform: rotate(360deg);
         transition: all 1s;
       }
-      // &.loading:hover {
-      //   // padding: 10px;
-      //   transition: transform 0.3s;
-      //   transform-origin: 22px;
-      //   transform: rotate(360deg);
-      //   transition: all 1s;
-      // }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .header {
+    .quote {
+      font-size: 15px;
+    }
+  }
+}
+@media (max-width: 587px) {
+  .header {
+    .quote {
+      font-size: 13px;
     }
   }
 }

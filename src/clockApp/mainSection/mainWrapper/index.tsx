@@ -32,10 +32,9 @@ function MainWrapper() {
     try {
       const response = await axios("http://worldtimeapi.org/api/ip");
       const respData = response.data;
-      // console.log(respData);
       setData(respData);
     } catch (error) {
-      // #Todo show error message
+      return "Something Went Wrong";
     }
   };
   useEffect(() => {

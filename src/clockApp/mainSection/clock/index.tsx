@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.scss";
-import { Sun, ArrowDown, ArrowUp } from "../../../images/icons";
+import { Sun, ArrowUp } from "../../../images/icons";
 
 interface ClockProps {
   expanded: string;
@@ -23,9 +23,7 @@ const Clock: React.FC<ClockProps> = (props) => {
     formattedTime = date.toLocaleTimeString(undefined, options);
   }
   let message = "";
-  // console.log(formattedTime.slice(0, -6));
   const hrs: number | undefined = Number(formattedTime.slice(0, -6));
-  // console.log(hrs);
   if (hrs >= 5 && hrs <= 12) {
     message = "Good morning";
   } else if (hrs >= 12 && hrs <= 18) {
@@ -65,7 +63,6 @@ const Clock: React.FC<ClockProps> = (props) => {
 
           <div className={`${props.expanded}`}>
             <ArrowUp />
-            {/* {props.expanded === "expanded" ? <ArrowUp /> : <ArrowDown />} */}
           </div>
         </div>
       </div>

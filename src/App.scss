@@ -3,9 +3,19 @@
 .app {
   font-family: "Roboto", sans-serif;
   height: 100vh;
-  // background-color: rgba(109, 109, 109, 0.192);
   background-image: url("./images/desktop/bg-image-daytime.jpg");
-
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (max-width: 450px) {
+  .app {
+    background-image: url("./images/tablet/bg-image-daytime.jpg");
+    background-size: cover;
+  }
+}
+@media (max-width: 320px) {
+  .app {
+    background-image: url("./images/mobile/bg-image-daytime.jpg");
+    background-size: cover;
+  }
 }
